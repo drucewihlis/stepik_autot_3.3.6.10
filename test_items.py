@@ -11,4 +11,5 @@ link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 def test_button_add_to_basket_has_specific_text(browser):
     browser.get(link)
     # time.sleep(10)
+    browser.implicitly_wait(5)
     assert browser.find_element(By.CSS_SELECTOR, ".btn-add-to-basket")
